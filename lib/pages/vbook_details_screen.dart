@@ -42,7 +42,7 @@ class VbookDetailsScreen extends StatelessWidget {
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: NetworkImage(
-                          "https://i.imgur.com/9s67Gww.png",
+                            'https://innovavietnam.vn/wp-content/uploads/poster-561x800.jpg',
                         ),
                       ),
                     ),
@@ -125,7 +125,7 @@ class VbookDetailsScreen extends StatelessWidget {
                     Icons.play_circle_outline,
                   ),
                   Text(
-                    'Watch Trailer',
+                    'Thêm phim vào vỏ',
                     style: TextStyle(
                       fontSize: 18,
                     ),
@@ -154,7 +154,7 @@ class VbookDetailsScreen extends StatelessWidget {
                     width: 5,
                   ),
                   Text(
-                    'Buy Now',
+                    'Đọc truyện',
                     style: TextStyle(
                       fontSize: 18,
                     ),

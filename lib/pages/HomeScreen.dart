@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         appBar: AppBar(
-          title: Text('Vbook List'),
+          title: Text('Danh sách Truyện'),
           actions: [
             IconButton(
               onPressed: () {
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                                         image: DecorationImage(
                                           fit: BoxFit.cover,
                                           image: NetworkImage(
-                                            "https://i.imgur.com/9s67Gww.png",
+                                            'https://innovavietnam.vn/wp-content/uploads/poster-561x800.jpg',
                                           ),
                                         ),
                                       ),

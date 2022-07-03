@@ -1,5 +1,6 @@
 import 'package:apidemo/models/vbook_model.dart';
 import 'package:apidemo/network/Api_service.dart';
+import 'package:apidemo/pages/vbook_details_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -41,7 +42,15 @@ class SearchUser extends SearchDelegate {
           return ListView.builder(
               itemCount: data?.length,
               itemBuilder: (context, index) {
-                return ListTile(
+                return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => VbookDetailsScreen(vbook:data[index])),
+                      );
+                    },
+                child:
+                 ListTile(
                   title: Row(
                     children: [
                       Container(
@@ -83,8 +92,10 @@ class SearchUser extends SearchDelegate {
                           ])
                     ],
                   ),
+                 )
                 );
-              });
+              }
+              );
         });
   }
 
